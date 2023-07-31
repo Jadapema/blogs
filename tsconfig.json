@@ -1,0 +1,89 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "esnext",
+    "module": "es2022",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "Node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "rootDir": "./",
+    "types": ["jest", "node", "testing-library__jest-dom"],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],
+    "paths": {
+      "@public/*": [
+        "public/*"
+      ],
+      "@src/*": [
+        "src/*"
+      ],
+      "@state/*": [
+        "src/redux/*"
+      ],
+      "@hoc/*": [
+        "src/hoc/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@config/*": [
+        "src/config/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@layouts/*": [
+        "src/pages/__layouts__/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@navigation/*": [
+        "src/navigation/*"
+      ],
+      "@services/*": [
+        "src/services/*"
+      ],
+      "@menu/*": [
+        "src/components/menu/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@i18n/*": [
+        "src/i18n/*"
+      ],
+      "@gql/*": [
+        "src/graphql/*"
+      ]
+    },
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "incremental": true
+  },
+  "include": [
+    "src",
+    "./**/*.graphql"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/.*/"
+  ]
+}
